@@ -2,7 +2,7 @@
 //объединяя элементы исходного массива попарно.
 
 //Пример: { "qwe", "wer", "ert", "rty", "tyu", "yui"} -> { "qwewer", "ertrty", "tyuyui"}
-string[] FillVowelLetter(string[]  word)
+string[] PairwiseUnion(string[]  word)
 {	
     string[] change=new string[word.Length/2];
 	for (int i=0; i<word.Length-1; i++)
@@ -32,4 +32,4 @@ ShowWords(wordsarray);
 
 Console.WriteLine();
 
-ShowWordsCheng(FillVowelLetter(wordsarray));
+ShowWordsCheng(PairwiseUnion(wordsarray));
